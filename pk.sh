@@ -1,0 +1,1 @@
+lsof -i -P -n | grep LISTEN | grep  $1  | xargs kill  -9  
