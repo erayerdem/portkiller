@@ -1,1 +1,1 @@
-lsof -i -P -n | grep LISTEN | grep  $1  | xargs kill  -9  
+lsof -i -P -n |  grep $1 |  awk '{print $2}'  | xargs kill -9
